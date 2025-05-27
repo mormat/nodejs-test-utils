@@ -12,10 +12,16 @@
     "contributors": [],
     "devDependencies": {
         "css2xpath": "^0.0.3",
-        "selenium-webdriver": "^4.32.0"
+        "selenium-webdriver": "^4.32.0",
+        "jest": "^29.7.0"
     },
     "main": "src/index.js",
     "scripts": {
+        "build": "npm pack --pack-destination=./build",
+        "jest": "jest",
         "build": "npm pack --pack-destination=./build"
+    },
+    "jest": {
+         "modulePathIgnorePatterns": ["resources"]
     }
 }
